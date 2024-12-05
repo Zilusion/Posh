@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POSH</title>
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base/fonts.css" />
+    <link rel="stylesheet" href="./styles/base/reset.css" />
+    <link rel="stylesheet" href="./styles/base/variables.css" />
+    <link rel="stylesheet" href="./styles/base/base.css" />
+    <link rel="stylesheet" href="./styles/sections/header.css" />
+    <link rel="stylesheet" href="./styles/sections/hero.css" />
+    <link rel="stylesheet" href="./styles/sections/philisophy.css" />
+    <link rel="stylesheet" href="./styles/sections/new.css" />
+    <link rel="stylesheet" href="./styles/sections/sale.css" />
+    <link rel="stylesheet" href="./styles/sections/gift-cards.css" />
+    <link rel="stylesheet" href="./styles/sections/latest-shows.css" />
+    <link rel="stylesheet" href="./styles/sections/footer.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="header__logo">
-                <img src="./assets/images/logo.svg" alt="POSH">
-            </div>
+            <a class="header__logo" href="#">
+                <img src="./assets/images/logo.svg" alt="POSH" />
+            </a>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__link">new</a>
+                        <a href="#new" class="header__link">new</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">sale</a>
+                        <a href="#sale" class="header__link">sale</a>
+                    </li>
+
                     <li class="header__item">
-                        <a href="#" class="header__link">gift cards</a>
+                        <a href="#gift-cards" class="header__link">gift cards</a>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">bags</a>
@@ -29,116 +45,133 @@
             </nav>
             <div class="header__buttons">
                 <button class="header__button header__cart-button">
-                    <img src="./assets/images/header/cart.svg" alt="Cart">
+                    <img src="./assets/images/header/cart.svg" alt="Cart" />
                 </button>
                 <button class="header__button header__account-button">
-                    <img src="./assets/images/header/account.svg" alt="Account">
+                    <img src="./assets/images/header/account.svg" alt="Account" />
                 </button>
-                <!-- <button class="header__button header__menu-button">
-                    <img src="img/menu.svg" alt="Menu">
-                </button> -->
+                <button class="header__button header__menu-button">
+                    <div class="header__button-icon"></div>
+                </button>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="hero">
-
-        </section>
+        <section class="hero"></section>
         <section class="philosophy">
             <div class="container philosophy__container">
-                <h2 class="section-title philosophy__title">Our philosophy</h2>
-                <p class="philosophy__text">Our brand is the embodiment of a unique idea of style, quality and functionality. Each handbag reflects the characteristics of the character and taste of its owner, emphasizing his individuality and refined taste</p>
+                <div class="philosophy__content">
+                    <h2 class="section-title philosophy__title">
+                        Our philosophy
+                    </h2>
+                    <p class="philosophy__text">
+                        Our brand is the embodiment of a unique idea of
+                        style, quality and functionality. Each handbag
+                        reflects the characteristics of the character and
+                        taste of its owner, emphasizing his individuality
+                        and refined taste
+                    </p>
+                </div>
             </div>
         </section>
-        <section class="new">
+        <section class="new" id="new">
             <div class="container new__container">
-                <h2 class="section-title new__title">New arrivals</h2>
+                <h2 class="section-title new__title">New</h2>
                 <div class="new__cards">
                     <div class="new__card">
-                        <img src="./assets/images/new/Low Key MM.png" alt="Low Key MM" class="new__image">
-                        <p class="new__name">Low Key MM</p>
-                        <div class="new__colors">
-                            <span class="new__color new__color--black"></span>
-                            <span class="new__color new__color--white"></span>
-                            <span class="new__color new__color--red"></span>
+                        <img src="./assets/images/new/Low Key MM.png" alt="Low Key MM" class="new__card-image" />
+                        <p class="new__card-name">Low Key MM</p>
+                        <div class="new__card-colors">
+                            <span class="new__card-color new__card-color--black"></span>
+                            <span class="new__card-color new__card-color--white"></span>
+                            <span class="new__card-color new__card-color--red"></span>
                         </div>
                     </div>
                     <div class="new__card">
-                        <img src="./assets/images/new/Nano Dione.png" alt="Nano Dione" class="new__image">
-                        <p class="new__name">Nano Dione</p>
-                        <div class="new__colors">
-                            <span class="new__color new__color--black"></span>
-                            <span class="new__color new__color--white"></span>
-                            <span class="new__color new__color--red"></span>
+                        <img src="./assets/images/new/Nano Dione.png" alt="Nano Dione" class="new__card-image" />
+                        <p class="new__card-name">Nano Dione</p>
+                        <div class="new__card-colors">
+                            <span class="new__card-color new__card-color--black"></span>
+                            <span class="new__card-color new__card-color--white"></span>
+                            <span class="new__card-color new__card-color--red"></span>
                         </div>
                     </div>
                     <div class="new__card">
-                        <img src="./assets/images/new/Felicie.png" alt="Felicie" class="new__image">
-                        <p class="new__name">Felicie</p>
-                        <div class="new__colors">
-                            <span class="new__color new__color--black"></span>
-                            <span class="new__color new__color--white"></span>
-                            <span class="new__color new__color--red"></span>
+                        <img src="./assets/images/new/Felicie.png" alt="Felicie" class="new__card-image" />
+                        <p class="new__card-name">Felicie</p>
+                        <div class="new__card-colors">
+                            <span class="new__card-color new__card-color--black"></span>
+                            <span class="new__card-color new__card-color--white"></span>
+                            <span class="new__card-color new__card-color--red"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sale">
+        <section class="sale" id="sale">
             <div class="container sale__container">
                 <div class="sale__content">
-                    <h2 class="section-title sale__title">Saleeeeeeee</h2>
+                    <h2 class="section-title sale__title">
+                        Saleeeeeeeeeeeeeeeeee
+                    </h2>
                     <div class="sale__cards">
                         <div class="sale__card">
-                            <img src="./assets/images/sale/hic tote.png" alt="Hic tote" class="sale__image">
-                            <p class="sale__name">Low Key MM</p>
+                            <img src="./assets/images/sale/hic tote.png" alt="Hic tote" class="sale__card-image" />
+                            <p class="sale__card-name">Low Key MM</p>
                         </div>
                         <div class="sale__card">
-                            <img src="./assets/images/sale/mini boite.png" alt="Hic tote" class="sale__image">
-                            <p class="sale__name">Mini boite</p>
+                            <img src="./assets/images/sale/mini boite.png" alt="Hic tote" class="sale__card-image" />
+                            <p class="sale__card-name">Mini boite</p>
                         </div>
                     </div>
                     <p class="sale__name">Alex Martin</p>
                 </div>
-                <div class="sale__image-wrapper">
-                    <img src="./assets/images/sale/alex martin.jpg" alt="Sale 3" class="sale__image">
+                <div class="sale__card-image-wrapper">
+                    <img src="./assets/images/sale/alex martin.jpg" alt="Sale 3" class="sale__card-image" />
                 </div>
             </div>
         </section>
-        <section class="gift-cards">
+        <section class="gift-cards" id="gift-cards">
             <div class="container gift-cards__container">
                 <h2 class="section-title gift-cards__title">Gift cards</h2>
+                <div class="gift-cards__line"></div>
                 <div class="gift-cards__cards">
-                    <img src="./assets/images/gift cards/3000.png" alt="3000€" class="gift-cards__card">
-                    <img src="./assets/images/gift cards/10000.png" alt="10000€" class="gift-cards__card">
-                    <img src="./assets/images/gift cards/5000.png" alt="5000€" class="gift-cards__card">
+                    <img src="./assets/images/gift cards/3000.png" alt="3000€" class="gift-cards__card" />
+                    <img src="./assets/images/gift cards/10000.png" alt="10000€" class="gift-cards__card" />
+                    <img src="./assets/images/gift cards/5000.png" alt="5000€" class="gift-cards__card" />
                 </div>
             </div>
         </section>
         <section class="latest-shows">
             <div class="container latest-shows__container">
-                <h2 class="section-title latest-shows__title">Latest shows</h2>
-                <p class="latest-shows__description">get to know the latest shows of POSH women's collections</p>
+                <h2 class="section-title latest-shows__title">
+                    Latest shows
+                </h2>
+                <p class="latest-shows__description">
+                    get to know the latest shows of POSH women's collections
+                </p>
                 <div class="latest-shows__cards">
                     <div class="latest-shows__card">
-                        <img src="./assets/images/latest shows/milan.jpg" alt="" class="latest-shows__image">
-                        <div class="latest-shows__info">
-                            <p class="latest-shows__date">14/07</p>
-                            <p class="latest-shows__place">Milan</p>
+                        <img src="./assets/images/latest shows/milan.jpg" alt="" class="latest-shows__card-image" />
+                        <div class="latest-shows__card-info">
+                            <p class="latest-shows__card-date">14/07</p>
+                            <p class="latest-shows__card-place">Milan</p>
                         </div>
                     </div>
                     <div class="latest-shows__card">
-                        <img src="./assets/images/latest shows/paris.jpg" alt="" class="latest-shows__image">
-                        <div class="latest-shows__info">
-                            <p class="latest-shows__date">10/10</p>
-                            <p class="latest-shows__place">Paris</p>
+                        <img src="./assets/images/latest shows/paris.jpg" alt="" class="latest-shows__card-image" />
+                        <div class="latest-shows__card-info">
+                            <p class="latest-shows__card-date">10/10</p>
+                            <p class="latest-shows__card-place">Paris</p>
                         </div>
                     </div>
                     <div class="latest-shows__card">
-                        <img src="./assets/images/latest shows/amsterdam.jpg" alt="" class="latest-shows__image">
-                        <div class="latest-shows__info">
-                            <p class="latest-shows__date">01/05</p>
-                            <p class="latest-shows__place">Amsterdam</p>
+                        <img src="./assets/images/latest shows/amsterdam.jpg" alt="" class="latest-shows__card-image" />
+                        <div class="latest-shows__card-info">
+                            <p class="latest-shows__card-date">01/05</p>
+                            <p class="latest-shows__card-place">
+                                Amsterdam
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -150,35 +183,77 @@
             <div class="footer__column">
                 <h3 class="footer__title">About the company</h3>
                 <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">About the brand</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Contact information</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Retail stores</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Vacancies</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About the brand</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Contact information</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Retail stores</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Vacancies</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__column">
                 <h3 class="footer__title">For clients</h3>
                 <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Delivery options</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Payment</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Return of goods</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Offer-agreement</a></li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Delivery options</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Payment</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Return of goods</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Offer-agreement</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__column">
-                <a href="https://www.google.com/maps/search/?api=1&query=52.370216,4.895168">Amsterdam, Pieter Cornelisz Hooftstraat</a>
-                <a href="tel:+31646424811">+(3164)6424811</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=52.370216,4.895168"
+                    class="footer__link footer__address">Amsterdam, Pieter Cornelisz Hooftstraat</a>
+                <a href="tel:+31646424811" class="footer__link">+(31 64) 642 48 11</a>
                 <div class="footer__social">
-                    <a href="#" class="footer__social-link">
-                        <svg class="footer__social-icon"><use xlink:href="img/sprite.svg#facebook"></use></svg></a>
-                    <a href="#" class="footer__social-link">
-                        <svg class="footer__social-icon"><use xlink:href="img/sprite.svg#instagram"></use></svg></a>
-                    <a href="#" class="footer__social-link">
-                        <svg class="footer__social-icon"><use xlink:href="img/sprite.svg#twitter"></use></svg></a>
+                    <a href="https://twitter.com/?lang=ru" class="footer__social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.3425 13.375L1 23M10.3425 13.375L17.5617 22.9374C17.5914 22.9767 17.6397 23 17.6914 23H22.8414C22.9694 23 23.0445 22.8664 22.9711 22.7693L13.4567 10.1667M10.3425 13.375L1.17422 1.23078C1.10084 1.13357 1.17583 1 1.30382 1H6.45396C6.50559 1 6.55395 1.02335 6.58356 1.06255L13.4567 10.1667M13.4567 10.1667L22.3544 1"
+                                stroke="#F5F5F5" stroke-width="1.25" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.9598 22.489C25 20.7207 25 18.3138 25 13.5C25 8.68613 25 6.27919 23.9598 4.51104C23.3777 3.52166 22.5792 2.68982 21.6294 2.08353C19.9319 1 17.6213 1 13 1C8.37869 1 6.06802 1 4.3706 2.08353C3.4208 2.68982 2.62223 3.52166 2.04019 4.51104C1 6.27919 1 8.68613 1 13.5C1 18.3138 1 20.7207 2.04019 22.489C2.62223 23.4784 3.4208 24.3101 4.3706 24.9165C6.06802 26 8.37869 26 13 26C17.6213 26 19.9319 26 21.6294 24.9165C22.5792 24.3101 23.3777 23.4784 23.9598 22.489Z"
+                                stroke="#F5F5F5" stroke-width="1.25" stroke-linecap="round" />
+                            <path
+                                d="M20.7648 6.14692C20.7648 6.553 20.4487 6.88221 20.0589 6.88221C19.6691 6.88221 19.353 6.553 19.353 6.14692C19.353 5.74083 19.6691 5.41162 20.0589 5.41162C20.4487 5.41162 20.7648 5.74083 20.7648 6.14692Z"
+                                stroke="#F5F5F5" stroke-width="1.25" stroke-linecap="round" />
+                            <path
+                                d="M18.6471 13.5C18.6471 16.7487 16.1188 19.3824 13.0001 19.3824C9.8813 19.3824 7.35303 16.7487 7.35303 13.5C7.35303 10.2513 9.8813 7.61768 13.0001 7.61768C16.1188 7.61768 18.6471 10.2513 18.6471 13.5Z"
+                                stroke="#F5F5F5" stroke-width="1.25" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="https://web.telegram.org/" class="footer__social-link">
+                        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.8327 16.5456L15.9192 25.2691C16.5426 26.3381 18.1842 26.2074 18.6162 25.0543L26.9089 2.9179C27.3355 1.77909 26.1897 0.677366 25.0054 1.08758L1.98352 9.06138C0.784329 9.47673 0.648374 11.0552 1.76018 11.6545L10.8327 16.5456ZM10.8327 16.5456L26.437 1.54133"
+                                stroke="#F5F5F5" stroke-width="1.25" stroke-linecap="round" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

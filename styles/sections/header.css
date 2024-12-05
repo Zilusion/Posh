@@ -1,0 +1,150 @@
+.header {
+	padding: 12px 0 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__nav {
+	margin-left: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__list {
+	display: flex;
+	gap: 30px;
+	font-size: 24px;
+}
+
+.header__item {
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.header__item:hover {
+	background-color: var(--white);
+	text-decoration: underline;
+}
+
+.header__link {
+	color: var(--black);
+}
+
+.header__buttons {
+	padding-left: 80px;
+	display: flex;
+	gap: 20px;
+}
+
+.header__menu-button {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.header__button-icon {
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__button-icon::before,
+.header__button-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.header__button-icon::before {
+    top: -10px;
+    left: 0;
+}
+
+.header__button-icon::after {
+    top: 10px;
+    left: 0;
+}
+
+.header__menu-button.active .header__button-icon {
+    background-color: transparent;
+}
+
+.header__menu-button.active .header__button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header__menu-button.active .header__button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@media screen and (max-width: 877px) {
+	.header__list {
+		gap: 15px;
+	}
+
+	.header__item {
+		padding: 7px 5px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header__list {
+		font-size: 18px;
+	}
+
+    .header__buttons {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+	.header__nav {
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 56px);
+        top: 56px;
+        left: 100vw;
+        background-color: var(--white);
+        display: block;
+        z-index: 5;
+	}
+
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 30px;
+        height: 100%;
+    }
+
+    .header__buttons {
+        margin-left: auto;
+    }
+
+    .header__menu-button {
+        display: block;
+    }
+
+    .header__nav.active {
+        left: 0;
+    }
+}

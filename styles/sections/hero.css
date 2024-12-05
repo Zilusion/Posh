@@ -1,0 +1,17 @@
+.hero {
+	background: white url(./../../assets/images/hero/bg.jpg) center/contain no-repeat;
+	height: 482px;
+    margin-top: 55px;
+}
+
+@media screen and (max-width: 926px) {
+	.hero {
+		background: white url(./../../assets/images/hero/bg.jpg) center/cover no-repeat;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.hero {
+		height: 300px;
+	}
+}

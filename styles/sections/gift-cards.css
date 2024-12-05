@@ -1,0 +1,48 @@
+.gift-cards {
+    padding: 40px 0;
+}
+
+.gift-cards__card {
+    transition: all 0.2s ease-in-out;
+}
+
+.gift-cards__card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gift-cards__line {
+    height: 27px;
+    width: 100%;
+    background-color: var(--white);
+    position: relative;
+    top: -35px;
+    z-index: -1;
+}
+
+.gift-cards__cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gift-cards__title {
+    font-size: 64px;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media screen and (max-width: 877px) {
+    .gift-cards__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gift-cards__title {
+        font-size: 48px;
+        text-align: center;
+    }
+}

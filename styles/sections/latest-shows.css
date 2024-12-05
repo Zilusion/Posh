@@ -1,0 +1,87 @@
+.latest-shows {
+    margin-bottom: 66px;
+}
+
+.latest-shows__title {
+    font-size: 64px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.latest-shows__description {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 27px;
+}
+
+.latest-shows__cards {
+    display: flex;
+    gap: 25px;
+    align-items: start;
+    padding-bottom: 50px;
+    background: url('./../../assets/images/latest shows/bg.svg') bottom repeat-x;
+}
+
+.latest-shows__card {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.latest-shows__card:hover {
+    border-color: #c6a268;
+}
+
+.latest-shows__card:hover .latest-shows__card-image {
+    border: 5px solid #c6a268;
+}
+
+.latest-shows__card:nth-child(3) .latest-shows__card-info {
+    flex-direction: row-reverse;
+}
+
+.latest-shows__card-image {
+    margin-bottom: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.latest-shows__card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-shows__card-date {
+    font-family: 'Josefin Slab';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.latest-shows__card-place {
+    font-family: 'Kameron';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .latest-shows__title {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .latest-shows__description {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .latest-shows__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

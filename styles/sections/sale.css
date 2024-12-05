@@ -1,0 +1,79 @@
+.sale {
+	padding: 40px 0;
+}
+
+.sale__container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.sale__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sale__title {
+	font-size: 48px;
+	text-align: left;
+	max-width: 380px;
+	overflow: hidden;
+}
+
+.sale__cards {
+	background-color: var(--white);
+}
+
+.sale__card-name {
+	font-weight: 500;
+	font-family: 'Inknut Antiqua';
+	letter-spacing: 0.05em;
+	text-align: center;
+	color: var(--dark-gray);
+	text-transform: uppercase;
+}
+
+.sale__card-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.sale__card {
+	transition: all 0.3s ease-in-out;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.sale__card:hover {
+	scale: 1.05;
+}
+
+.sale__name {
+	font-size: 24px;
+	font-weight: 500;
+	font-family: 'Inknut Antiqua';
+	letter-spacing: 0.05em;
+	text-align: center;
+	color: var(--gray);
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+	.sale__container {
+		grid-template-columns: 1fr;
+	}
+
+    .sale__title {
+        max-width: 300px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    .sale__cards {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+.philosophy {
+    background: white url(./../../assets/images/philosophy/car3.png) center/contain no-repeat;
+    height: 485px;
+}
+
+.philosophy__container {
+    padding-top: 150px;
+}
+
+.philosophy__content {
+    padding: 0 35px 18px;
+    max-width: 400px;
+    margin-left: auto;
+    background-color: var(--white);
+}
+
+.philosophy__title {
+    font-weight: 500;
+    font-family: 'Inknut Antiqua';
+    position: relative;
+    top: -40px;
+}
+
+
+.philosophy__text {
+    text-align: center;
+    font-family: 'Josefin Slab';
+    font-weight: 600;
+    line-height: 1.375;
+    letter-spacing: 0.05em;
+    padding: 15px;
+    border: 1px solid var(--black);
+}
+
+@media screen and (max-width: 768px) {
+    .philosophy__content {
+        margin: 0 auto;
+    }
+
+    .philosophy__title {
+        top: 0;
+        font-size: 24px;
+    }
+
+    .philosophy__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 926px) {
+	.philosophy {
+		background: url(./../../assets/images/philosophy/car3.png) left/cover no-repeat;
+	}
+}
